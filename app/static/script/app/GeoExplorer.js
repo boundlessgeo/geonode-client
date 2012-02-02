@@ -497,7 +497,7 @@ var GeoExplorer = Ext.extend(gxp.Viewer, {
             }
             if (!this.fromLayer && !this.mapID) {
                 if (addLayers !== null) {
-                    addLayers.showCapabilitiesGrid();
+                    addLayers.showCatalogueSearch();
                 }
             }
 
