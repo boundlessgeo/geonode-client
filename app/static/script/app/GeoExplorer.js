@@ -211,7 +211,7 @@ var GeoExplorer = Ext.extend(gxp.Viewer, {
                                 },
                                 scope: this
                             });
-                        }.bind(this);
+                        }.createDelegate(this);
                         var win = new Ext.Window({
                             title: "GeoNode Login",
                             modal: true,
@@ -290,7 +290,7 @@ var GeoExplorer = Ext.extend(gxp.Viewer, {
             if (this.fireEvent("beforeunload") === false) {
                 return "If you leave this page, unsaved changes will be lost.";
             }
-        }).bind(this);
+        }).createDelegate(this);
         
         // limit combo boxes to the window they belong to - fixes issues with
         // list shadow covering list items
